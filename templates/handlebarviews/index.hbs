@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<link rel="stylesheet" href="/css/styles.css">
+<title>Home</title>
+
+    </head>
+    <body>
+        <div  class="main-content">
+        {{>header}}
+        </br></br>
+        <h1>{{text}}</h1>
+        </br>
+        <form>
+            <label>City</label>
+            <input type="text" name="city" placeholder="Wellington" required>
+            </br></br>
+            <label>Country</label>
+            <input type="text" name="country" placeholder="New Zealand" required >
+            </br></br>
+            <button >Forecast</button>
+        </form>
+        </br>
+        </br>
+        <p id="ForcRes"></p>
+        </div>
+        </br></br></br>
+      {{>footer}}
+      <script src="/js/main.js"></script>
+    </body>
+</html>
