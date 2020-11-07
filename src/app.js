@@ -26,6 +26,7 @@ res.render('index',{
 })
 })
 
+
 app.get('/Weather',(req,res)=>{
     var city=req.query.city
     var country=req.query.country
