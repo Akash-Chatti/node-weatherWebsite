@@ -3,7 +3,8 @@ const path= require('path')
 const forecast=require('./GetWeather.js')
 const app = express()
 const hbs= require('hbs')
-const { count } = require('console')
+const port=process.env.PORT || 3000
+
 //setup handle bars
 app.set('view engine','hbs')
 //html pages can be rendered/ served back as a static file and use the page name in the url
@@ -119,7 +120,7 @@ app. get('/help/*',(req,res)=>{
 // })
 
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
 
     console.log('Server running on 3000 and has home routing')
 })

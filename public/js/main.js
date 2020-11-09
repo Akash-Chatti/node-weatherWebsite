@@ -9,8 +9,10 @@ weartherform.addEventListener('submit',(e)=>{
     var city=document.querySelector('[name="city"]').value
 var country=document.getElementsByName('country')[0].value
 resultline.textContent='Loading..'
-//console.log(city,country,params)
-fetch('http://localhost:3000/weather?city='+city+'&country='+country).then(
+
+//fetch('http://localhost:3000/weather?city='+city+'&country='+country).then(
+//shortening the url casue we won't know in which port the code will run on server 
+fetch('/weather?city='+city+'&country='+country).then(
     (response)=>{
         response.json().then((data)=>{
 
