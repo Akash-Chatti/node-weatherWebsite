@@ -26,7 +26,7 @@ var emsg='';
 //     break;
 //   }
 // }
-var reg=/^[a-zA-Z]+$/;
+var reg=/^[a-zA-Z\s]+$/;
 if(!reg.test(country)||!reg.test(place))
 {
 emsg ="Invalid City/Country";
