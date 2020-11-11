@@ -100,7 +100,7 @@ app. get('/help/*',(req,res)=>{
     })
 }) 
 //1. to all 404 i.e, all routes that are not mapped
- app.get('*',(req, res)=>{
+ app.get('/*',(req, res)=>{
     // res.send('You got the wrong address')
     res.render('PageNotFound',{
         Htitle:'The page you are looking for is not available',
