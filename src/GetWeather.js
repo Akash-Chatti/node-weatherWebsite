@@ -5,7 +5,7 @@ var long=""
 var loc=""
 var location=(place,country,callback)=>{
 var cordUrl='https://api.mapbox.com/geocoding/v5/mapbox.places/'+place+'_'+country+'.json?access_token=pk.eyJ1IjoiaXJhdmFhIiwiYSI6ImNrZzUwaDM2ZjA2Z2MyeXIwa2NqcGlvZnoifQ.xUgGiVVqmDbecHd5DMQXkA'
-//debugger
+
 loc=place+'_'+country
 request({url:cordUrl,json:true},(error,{body}={})=>{
     if(error)

@@ -5,7 +5,7 @@ var resultline=document.querySelector('[id="ForcRes"]')
 resultline.textContent='Enter details to see your forecast here'
 weartherform.addEventListener('submit',(e)=>{
     e.preventDefault()
-    var params=document.querySelector('input')
+ //   var params=document.querySelector('input')
     var city=document.querySelector('[name="city"]').value
 var country=document.getElementsByName('country')[0].value
 resultline.textContent='Loading..'
@@ -24,11 +24,11 @@ fetch('/weather?city='+city+'&country='+country).then(
             else
             {
                 console.log(data)
-                resultline.textContent=JSON.stringify(data)
+                var msg= city+' will have a temperature of '+ data.temp+' and the sky will be '+data.sky+'.'
+
+                resultline.textContent=msg
             }
         })
     }
 )
- 
-//    console.log('Testing')
 })

@@ -36,9 +36,8 @@ app.get('/Weather',(req,res)=>{
     forecast.showWeather(city,country,(err,weatherInfo)=>{
         if(!err)
         {
-         var msg= city+' will have a temperature of '+ weatherInfo.temp+' and the sky will be '+weatherInfo.sky+'.'
 
-            return res.send(msg)
+            return res.send(weatherInfo)
 
         }
         else
