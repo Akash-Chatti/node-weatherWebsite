@@ -22,7 +22,7 @@ var imgPath=path.join(__dirname,'../public/image/logo.jpg')
 app.get('/home',(req,res)=>{
 res.render('index',{
     text:'Enter your location get weather',
-    name:'Raavan',
+    name:'Akash Chatti',
     title:'Weather'
 })
 })
@@ -59,7 +59,7 @@ app.get('',(req,res)=>{
 
     res.render('index',{
         text:'Weather Home page',
-        name:'Raavan',
+        name:'Akash Chatti',
         title:'Weather'
     })
     
@@ -92,7 +92,7 @@ app. get('/help/*',(req,res)=>{
         Htitle:'The page you are looking for is not available',
         Htext:'Please visit our Help page for more',
         message:'The Help article was not found',
-        name:'Raavan'
+        name:'Akash Chatti'
     })
 }) 
 //1. to all 404 i.e, all routes that are not mapped
@@ -102,7 +102,7 @@ app. get('/help/*',(req,res)=>{
         Htitle:'The page you are looking for is not available',
         Htext:'Please visit our Help page for more',
         message:'Page not found',
-        name:'Raavan'
+        name:'Akash Chatti'
     })
  })
 
