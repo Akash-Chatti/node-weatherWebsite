@@ -70,14 +70,14 @@ app.get('/help',(req,res)=>{
         title:'Help',
         phrase:'Best tip when you are clueless',
         tip:'Turn towards east and join hands',
-        name:'Raavan'
+        name:'Akash Chatti'
     })
 })
 app.get('/about',(req,res)=>{
 
     res.render('about',{
         about:'This site is built using Node JS, Express Server, Handle bars and has partials setup',
-        name:'Raavan',
+        name:'Akash Chatti',
         title:'About',
         imgPath
     })
