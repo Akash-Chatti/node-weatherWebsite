@@ -19,6 +19,7 @@ app.set('views',viewsPath)
 var partialsPath=path.join(__dirname,'../templates/partials')
 hbs.registerPartials(partialsPath)
 var imgPath=path.join(__dirname,'../public/image/logo.jpg')
+
 app.get('/home',(req,res)=>{
 res.render('index',{
     text:'Enter your location get weather',
