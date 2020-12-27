@@ -5,11 +5,11 @@ var long=""
 var loc=""
 var location=(place,country,callback)=>{
 var cordUrl='https://api.mapbox.com/geocoding/v5/mapbox.places/'+place+'_'+country+'.json?access_token=pk.eyJ1IjoiaXJhdmFhIiwiYSI6ImNrZzUwaDM2ZjA2Z2MyeXIwa2NqcGlvZnoifQ.xUgGiVVqmDbecHd5DMQXkA'
-var upperBoundUpper = "A".charCodeAt(0);
-var lowerBoundUpper = "Z".charCodeAt(0);
+// var upperBoundUpper = "A".charCodeAt(0);
+// var lowerBoundUpper = "Z".charCodeAt(0);
 //Upper and lower bounds for lower case characters
-var upperBoundLower = "a".charCodeAt(0);
-var lowerBoundLower = "z".charCodeAt(0);
+// var upperBoundLower = "a".charCodeAt(0);
+// var lowerBoundLower = "z".charCodeAt(0);
 
 var emsg='';
 // for (var i = 0; i < place.length; i++) {
